@@ -1,0 +1,13 @@
+<section class="listing">
+    <div class="listing-photo-container">
+        <img class="listing-photo" [src]="product.image" alt="Exterior photo of {{product.name}}">
+    </div>
+    <div class="details">
+        <p class="name">{{ product.name }}</p>
+        <p class="description">{{ product.description }}</p>
+        <p>
+            <span class="price"> Price: {{ product.price | currency: "rub`"}} </span> 
+            <span class="rating">Rating: {{ product.rating}} / 5</span>
+        </p>
+    </div>
+</section>
