@@ -6,12 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  category: string | undefined;
-
-  setCategory(category : string){
-    this.category = category;
-    console.log(category);
-  }
 }
 
 

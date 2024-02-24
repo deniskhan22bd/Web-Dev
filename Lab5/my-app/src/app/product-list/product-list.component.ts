@@ -13,7 +13,9 @@ export class ProductListComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute
-  ) { }
+  ) { 
+    this.products = products
+  }
 
 
   ngOnInit() {
@@ -30,6 +32,17 @@ export class ProductListComponent implements OnInit {
 
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
+  }
+
+  removeProduct(id : number){
+    this.products = this.products.filter(product => product.id !== id);
+  }
+
+  like(id: number){
+    const product = this.products.find(product => product.id === id)
+    if(product){
+      product.likes++;
+    }
   }
 }
 

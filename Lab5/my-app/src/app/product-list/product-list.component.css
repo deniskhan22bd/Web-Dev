@@ -1,12 +1,16 @@
+.main{
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
 div, h2{
     margin: 30px;
 }
 
 .image{
-    width: 150px;
+    width: auto;
     height: 211px;
 }
-
 
 
 .telegram-button i{
@@ -27,4 +31,27 @@ h2{
 
 h3{
     font-size: 20px;
+}
+
+.else{
+    margin: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.if{
+    margin: 0;
+    padding: 0;
+}
+
+.remove{
+    position: relative;
+    bottom: 2px;
+    margin-left: 10px;
+}
+
+.like{
+    position: relative;
+    bottom: 2px;
+    margin-left: 10px;
 }
