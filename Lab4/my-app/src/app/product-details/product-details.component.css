@@ -18,7 +18,7 @@ h2{
     border-radius: 5px;
 }
 
-.description{
+.description, .link{
     font-size: 16px;
     font-weight: 500;
     color: #333;

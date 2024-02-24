@@ -9,6 +9,7 @@
       <span class="rating">Rating: {{ product.rating}} / 5</span>
     </p>
     <p class="description">{{ product.description }}</p>
+    <p class="link"> <a [href]="product.link" target="_blank"> Link</a> </p>
     <button type="button" (click)="addToCart(product)">Buy</button>
   </div>
 </section>
