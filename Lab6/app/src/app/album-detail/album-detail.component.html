@@ -14,7 +14,8 @@
         Photos
     </button>
 </a>
-<form (click)="changeTitle()">
-    <input type="text" placeholder="Change Title" [ngModel]="title">
-    <button>Save</button>
+
+<form (ngSubmit)="changeTitle()">
+    <input type="text" name="name" [(ngModel)]="title" placeholder="Enter title">
+    <button type="submit">Save</button>
 </form>

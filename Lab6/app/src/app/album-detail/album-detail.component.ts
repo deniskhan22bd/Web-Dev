@@ -19,6 +19,7 @@ import { FormsModule } from '@angular/forms';
 export class AlbumDetailComponent implements OnInit{
   album !: Album
   title : string = ''
+
   constructor(
     private route : ActivatedRoute,
     private albumsService: AlbumsService,
@@ -33,7 +34,7 @@ export class AlbumDetailComponent implements OnInit{
     })
   }
 
-  changeTitle(){
+  changeTitle() {
     this.album.title = this.title;
   }
 }
