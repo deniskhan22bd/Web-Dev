@@ -1,0 +1,19 @@
+<h2>Album detail:</h2>
+
+<p> Album id : {{album.id}} </p>
+<p> Album title :  {{album.title}} </p>
+<br>
+<a [routerLink]="['/albums']">
+    <button>
+        Return Back
+    </button>
+</a>
+
+<a [routerLink]="['/albums', album.id, 'photos']">
+    <button>
+        Photos
+    </button>
+</a>
+<br>
+<input type="text" id="changeTitle" placeholder="Change Title" [ngModel='titleInput']>
+<button (click)="changeTitle()" >Save</button>
