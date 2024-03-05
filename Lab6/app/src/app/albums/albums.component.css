@@ -1,0 +1,39 @@
+.albums {
+    max-width: 800px;
+    margin: 10px;
+}
+
+.content {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the center */
+}
+
+.album-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    flex-grow: 1;
+    /* Allow the link to grow and take up remaining space */
+}
+
+.album-link:hover {
+    text-decoration: underline;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}

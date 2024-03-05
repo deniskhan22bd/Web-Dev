@@ -1,12 +1,10 @@
-<p>album-photos works!</p>
-
-<div *ngFor="let photo of photos">
-    
-    <span>
-        {{photo.albumId}}
-        {{photo.title}}
-        {{photo.id}}
-        <img src="{{photo.thumbnailUrl}}" alt="">
-    </span>
-
+<div class="album-photos">
+    <div *ngFor="let photo of photos" class="photo-item">
+        <div class="photo-info">
+            <h3>Title: {{ photo.title }}</h3>
+            <p>Album ID: {{ photo.albumId }}</p>
+            <p>Photo ID: {{ photo.id }}</p>
+        </div>
+        <img [src]="photo.thumbnailUrl" alt="{{ photo.title }}">
+    </div>
 </div>
