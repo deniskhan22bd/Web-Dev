@@ -12,7 +12,6 @@ def date_fashion(you, date):
     else:
         return 1
     
-    
 def squirrel_play(temperature, is_summer):
     if is_summer:
         return 60 <= temperature <= 100

@@ -16,6 +16,7 @@ def centered_average(nums):
     
     return (sum(nums) - mi - ma) / (len(nums) - 2 )
 
+
 def sum13(nums):
     total = 0
     skip_next = False
