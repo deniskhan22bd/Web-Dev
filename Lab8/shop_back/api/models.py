@@ -1,8 +1,7 @@
 from django.db import models
 # Create your models here.
 class Category(models.Model):
-    name = models.CharField(max_length=255)
-    
+    name = models.CharField(max_length=250)
     def to_json(self):
         return {
             'id' : self.id,
@@ -15,13 +14,14 @@ class Product(models.Model):
     description = models.TextField()
     count = models.IntegerField()
     is_active = models.BooleanField()
-    category_id = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     def to_json(self):
         return {
-            'id' : self.id,
-            'name' : self.name,
-            'price' : self.price,
-            'description' : self.description,
-            'count' : self.count,
-            'is_active' : self.is_active
+            'id': self.id,
+            'name': self.name,
+            'price': self.price,
+            'description': self.description,
+            'count': self.count,
+            'is_active': self.is_active,
+            'category': self.category.name
         }

@@ -1,3 +1,4 @@
+
 from django.http import HttpResponse,JsonResponse
 from django.core.serializers import serialize
 
@@ -33,9 +34,17 @@ def categories_by_id(request, id):
         })
 
 def products_by_category(request, id):
-    category = Category.objects.get(id=id)
-    category_dict = {
-        'id' : category.id,
-        'category' : category.name
-    }
-    return JsonResponse(category_dict, safe=False)
+    try:
+        category = Category.objects.get(id=id)
+        products = Product.objects.filter(category_id=id)
+        products_json = []
+        for product in products:
+            product_json = product.to_json()
+            product_json['category'] = category.to_json()
+            products_json.append(product_json)
+        
+        return JsonResponse(products_json, safe=False)
+    except Category.DoesNotExist as e:
+        return JsonResponse({
+            'error' : str(e)
+        })
