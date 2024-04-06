@@ -14,5 +14,5 @@ class Vacancy(models.Model):
     company = models.ForeignKey(
         Company, 
         on_delete=models.CASCADE,
-        related_name='companies'
+        related_name='vacancies'
     )
