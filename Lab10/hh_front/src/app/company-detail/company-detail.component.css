@@ -1,0 +1,35 @@
+.company-details {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.company-details h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.vacancy {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.vacancy h4 {
+    color: #0066cc;
+    font-size: 20px;
+}
+
+.vacancy p {
+    color: #333;
+    font-size: 16px;
+}
+
+.vacancy h3 {
+    color: #0066cc; 
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; 
+    padding-bottom: 5px; 
+}

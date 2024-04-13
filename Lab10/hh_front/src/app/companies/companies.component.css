@@ -1,0 +1,27 @@
+.company {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.company h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.company p {
+    color: #666;
+    font-size: 16px;
+}
+
+.company a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.company a:hover {
+    color: #0066cc;
+}
